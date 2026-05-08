@@ -30,5 +30,7 @@ func (billing *billing) GetBalance() int64 {
 }
 
 func (billing *billing) GetTransactions() []*Transaction {
-	return nil
+	var result []*Transaction
+
+	return result
 }
