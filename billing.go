@@ -9,6 +9,7 @@ import (
 type (
 	Billing interface {
 		GetBalance() int64
+		GetTransactions() []*Transaction
 	}
 
 	billing struct {
@@ -26,4 +27,8 @@ func NewBilling() Billing {
 
 func (billing *billing) GetBalance() int64 {
 	return billing.balance
+}
+
+func (billing *billing) GetTransactions() []*Transaction {
+	return nil
 }
